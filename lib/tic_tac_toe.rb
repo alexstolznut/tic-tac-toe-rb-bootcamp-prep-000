@@ -159,9 +159,9 @@ def play(board)
 
 
   over = over?(board)
-  if over
-    return false
-  else
+  # if over
+  #   return false
+  # else
   #   until over
   #     turn(board)
   #     over = over?(board)
@@ -169,19 +169,15 @@ def play(board)
   #       puts "Cat's Game!"
   #     end
   #   end
-  #
+  # 
   # end
   until over
     turn(board)
     over = over?(board)
-    if won?(board)
-      puts "Congratulations #{winner(board)}!"
-    end
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   else
     puts "Cat's Game!"
   end
-end
 end
