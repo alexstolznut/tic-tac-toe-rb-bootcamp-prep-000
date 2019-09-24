@@ -77,7 +77,7 @@ def turn(board)
   while valid == false
     puts "Please enter 1-9:"
     index = gets.strip
-    valid = valid_move?(board, index)
+    valid = valid_move?(board, input_to_index(index))
     if valid
       move(board, index, current_player)
       display_board(board)
