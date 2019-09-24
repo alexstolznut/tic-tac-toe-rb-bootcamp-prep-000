@@ -159,6 +159,7 @@ def play(board)
 
 
   over = over?(board)
+  won = won?(board)
   # if over
   #   return false
   # else
@@ -175,10 +176,10 @@ def play(board)
     turn(board)
     over = over?(board)
     won?(board)
-    if won?(board)
-      puts "Congratulations #{winner(board)}!"
-    elsif(draw?(board))
-      puts "Cat's Game!"
-    end
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif(draw?(board))
+    puts "Cat's Game!"
   end
 end
