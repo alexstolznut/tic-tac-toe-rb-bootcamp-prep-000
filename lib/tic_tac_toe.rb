@@ -157,10 +157,13 @@ end
 #
 def play(board)
 
-  turn(board)
+
   over = over?(board)
   if over
     return false
+  else
+      turn(board)
+    
   end
   # until over
   #   turn(board)
