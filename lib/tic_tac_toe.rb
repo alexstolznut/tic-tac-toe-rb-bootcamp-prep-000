@@ -160,6 +160,12 @@ def play(board)
 
   over = over?(board)
   won = won?(board)
+  if over 
+    puts "Cat's Game!"
+    return false
+  elsif won
+    puts "Congratulations #{winner(board)}"
+  end
   # if over
   #   return false
   # else
