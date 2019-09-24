@@ -165,6 +165,9 @@ def play(board)
     until over
       turn(board)
       over = over?(board)
+      if draw?(board)
+        puts "Cat's Game"
+      end
     end
 
   end
