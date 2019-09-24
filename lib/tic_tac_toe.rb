@@ -169,7 +169,7 @@ def play(board)
   #       puts "Cat's Game!"
   #     end
   #   end
-  # 
+  #
   # end
   until over
     turn(board)
