@@ -166,7 +166,7 @@ def play(board)
       turn(board)
       over = over?(board)
       if draw?(board)
-        puts "Cat's Game"
+        puts "Cat's Game!"
       end
     end
 
