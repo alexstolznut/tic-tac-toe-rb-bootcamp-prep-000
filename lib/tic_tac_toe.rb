@@ -159,6 +159,9 @@ def play(board)
 
   turn(board)
   over = over?(board)
+  if over
+    return false
+  end
   # until over
   #   turn(board)
   #   over = over?(board)
