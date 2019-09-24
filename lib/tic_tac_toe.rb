@@ -174,6 +174,9 @@ def play(board)
   until over
     turn(board)
     over = over?(board)
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    end
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
