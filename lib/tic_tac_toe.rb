@@ -83,10 +83,10 @@ def turn(board)
       display_board(board)
     end
   end
-  # elsif valid
-  #   move(board, index, current_player)
-  #   display_board(board)
-  # end
+  if valid
+    move(board, index, current_player)
+    display_board(board)
+  end
 
 
 end
