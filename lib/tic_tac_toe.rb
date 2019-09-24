@@ -166,7 +166,7 @@ def play(board)
       puts "Cat's Game!"
       return false
     elsif won
-      puts "Congratulations #{winner(board)}"
+      puts "Congratulations #{winner(board)}!"
       return false
     end
   end
