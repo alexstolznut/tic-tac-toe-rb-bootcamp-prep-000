@@ -44,29 +44,44 @@ def valid_move?(board, index)
   end
 end
 #
+# def turn(board)
+#   puts "Please enter 1-9:"
+#   index = gets.strip
+#   index = input_to_index(index.strip)
+#   valid = valid_move?(board, index)
+#   current_player = current_player(board)
+#   if valid
+#     move(board, index,current_player)
+#     display_board(board)
+#   elsif
+#     until valid
+#       puts "Please enter 1-9:"
+#       index = gets.chomp
+#       index = input_to_index(index.chomp)
+#       valid = valid_move?(board, index)
+#       if valid
+#         move(board, index,current_player)
+#         display_board(board)
+#       end
+#     end
+#     move(board, index,current_player)
+#     display_board(board)
+#   end
+# end
 def turn(board)
   puts "Please enter 1-9:"
   index = gets.strip
-  index = input_to_index(index.strip)
+  index = input_to_index(index)
   valid = valid_move?(board, index)
-  current_player = current_player(board)
-  if valid
-    move(board, index,current_player)
-    display_board(board)
-  elsif
-    until valid
-      puts "Please enter 1-9:"
-      index = gets.chomp
-      index = input_to_index(index.chomp)
-      valid = valid_move?(board, index)
-      if valid
-        move(board, index,current_player)
-        display_board(board)
-      end
-    end
-    move(board, index,current_player)
+  if valid == false
+    puts "Please enter 1-9:"
+    index = gets.strip
+  elsif valid
+    move(board, index)
     display_board(board)
   end
+
+
 end
 #
 def turn_count(board)
@@ -145,9 +160,7 @@ end
 #
 def play(board)
 
-  until over?(board)
-    turn(board)
-  end
+  turn(board)
   # until over?(board)
   #   turn(board)
   # end
