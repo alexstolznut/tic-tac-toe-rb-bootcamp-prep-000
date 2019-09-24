@@ -159,10 +159,10 @@ def play(board)
 
   turn(board)
   over = over?(board)
-  until over
-    turn(board)
-    over = over?(board)
-  end
+  # until over
+  #   turn(board)
+  #   over = over?(board)
+  # end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   else
