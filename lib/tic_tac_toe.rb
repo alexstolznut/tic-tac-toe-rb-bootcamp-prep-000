@@ -170,18 +170,6 @@ def play(board)
       return false
     end
   end
-  # if over
-  #   return false
-  # else
-  #   until over
-  #     turn(board)
-  #     over = over?(board)
-  #     if draw?(board)
-  #       puts "Cat's Game!"
-  #     end
-  #   end
-  #
-  # end
   until over
     turn(board)
     over = over?(board)
