@@ -194,9 +194,9 @@ def play(board)
       return false
     end
   end
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  elsif(draw?(board))
-    puts "Cat's Game!"
-  end
+  # if won?(board)
+  #   puts "Congratulations #{winner(board)}!"
+  # elsif(draw?(board))
+  #   puts "Cat's Game!"
+  # end
 end
