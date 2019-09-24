@@ -162,7 +162,10 @@ def play(board)
   if over
     return false
   else
+    until over
       turn(board)
+      over = over?(board)
+    end
 
   end
   # until over
